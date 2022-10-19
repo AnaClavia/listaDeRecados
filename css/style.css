@@ -1,0 +1,231 @@
+body {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.row {
+    height: 100%;
+}
+
+.button-logout {
+    font-size: 32px;
+    justify-content: right;
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-fluid {
+    height: 90vh;
+    width: 90% !important;
+    border-radius: 20px;
+    overflow: hidden;
+    border: none;
+    box-shadow:
+        inset 0 -2em 2em rgba(0, 0, 0, 0.1),
+        -0.2em 1em 0.8em rgba(0, 0, 0, 0.3);
+}
+
+.esquerda {
+    background-color: rgb(244, 33, 0);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.direita {
+    background-color: lightcoral;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_register,
+.form_recovery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#baloes {
+    width: 100%;
+    height: 100%;
+}
+
+.btn-primary {
+    background-color: red;
+    border-color: antiquewhite;
+    border-radius: 25px;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    animation: blink .9s infinite;
+}
+
+@keyframes blink {
+    0% {
+        color: firebrick;
+    }
+
+    50% {
+        color: orangered;
+    }
+
+    100% {
+        color: white;
+    }
+}
+
+.input_register {
+    width: 180px;
+    height: 40px;
+    margin: 5px;
+}
+
+.btn-redefinir-senha {
+    background-color: darkred !important;
+    border-radius: 25px !important;
+    border: none !important;
+}
+
+.tabela_entrada {
+    text-align: center;
+    display: flex;
+    width: 100%;
+    height: 30px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.descricao {
+    width: 20%;
+    height: 100%;
+}
+
+.detalhamento {
+    width: 65%;
+    height: 100%;
+    margin-left: 2%;
+    padding: 0;
+}
+
+.btn_salvar_container {
+    width: 10%;
+    height: 100%;
+}
+
+.btn_salvar {
+    width: 100%;
+    height: 100%;
+    background-color: fuchsia;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.tabela {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 100%;
+    margin-top: 16px;
+    text-align: left;
+}
+
+.tabela_cabecalho {
+    border-top: 1px solid rgb(223, 210, 223);
+    border-bottom: 1px solid rgb(245, 236, 245);
+    color: indigo;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+#tabela_ordem {
+    width: 10%;
+}
+
+#tabela_descricao {
+    width: 20%;
+}
+
+#tabela_detalhamento {
+    width: 50%;
+}
+
+#tabela_acao {
+    width: 20%;
+}
+
+#apagar {
+    background-color: rgb(245, 105, 231);
+    color: white;
+    width: 60px;
+    height: 30px;
+    margin-top: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+#editar {
+    background-color: rgb(137, 218, 99);
+    color: white;
+    width: 60px;
+    height: 30px;
+    margin-top: 8px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 8px;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+.tabela_linha {
+    animation: appear 1s linear;
+}
+
+@keyframes appear {
+    from {
+        transform: translateX(1000px)
+    }
+
+    to {
+        transform: translateX(0)
+    }
+}
+
+#invisivel {
+    display: none;
+}
+
+.bg-pink {
+    background-color: hwb(0 53% 4%);
+}
+
+p,
+a {
+    font-style: italic;
+    color: ghostwhite;
+}
+
+.flex-start {
+    justify-content: flex-start !important;
+    align-items: start !important;
+    padding-top: 32px;
+}
